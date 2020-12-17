@@ -37,7 +37,7 @@ jobs:
           npm install
       - name: '运行 【KD】'
         run: |
-          node jd_health.js
+          node jd_kd.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
