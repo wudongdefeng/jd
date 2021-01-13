@@ -7,7 +7,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types:  jd_cash.js
+    types:  jd_cash
 jobs:
   build:
 
@@ -32,10 +32,10 @@ jobs:
         run: |
           cd ~/jd_scripts
           npm install
-      - name: '运行 【 jd_cash.js脚本】'
+      - name: '运行 【 jd_cash脚本】'
         run: |
           cd ~/jd_scripts
-          node  jd_cash.js.js
+          node  jd_cash.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
@@ -48,4 +48,4 @@ jobs:
           DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
           IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
-          IGOT_PUSH_KEY: ${{ secrets.JD_CASH_SHARECODES }}
+          JD_CASH_SHARECODES: ${{ secrets.JD_CASH_SHARECODES }}
