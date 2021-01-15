@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Mirror the Github repos to Gitee.
-      uses: Yikun/hub-mirror-action@v0.10
+      uses: fakedon/hub-mirror@main
       with:
         src: gitee/lxk0301
         dst: gitee/wudongdefeng
