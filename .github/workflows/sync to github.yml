@@ -23,7 +23,7 @@ jobs:
       uses: fakedon/hub-mirror@main
       with:
         src: gitee/lxk0301
-        dst: gitee/wudongdefeng
+        dst: github/wudongdefeng
         dst_key: ${{ secrets.USER_PRIVATE_KEY }}
         dst_token: ${{ secrets.USER_TOKEN }}
         static_list: "jd_scripts"
