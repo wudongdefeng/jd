@@ -24,7 +24,7 @@ jobs:
       with:
         src: gitee/lxk0301
         dst: gitee/wudongdefeng
-        dst_key: ${{ secrets.GITHUB_PRIVATE_KEY }}
+        dst_key: ${{ secrets.USER_PRIVATE_KEY }}
         dst_token: ${{ secrets.USER_TOKEN }}
         static_list: "jd_scripts"
         account_type: user
